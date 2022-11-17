@@ -19,10 +19,10 @@ ostream& print(std::ostream &out, std::pair<T1, T2> const &val)
 template<template<typename, typename...> class T, typename... Args>
 ostream& operator<<(std::ostream &out, T<Args...> const &cont) 
 {
-    cout<<"[ ";
+    cout<<"( ";
     for(auto elem : cont) 
         print(out, elem);
-    cout<<"]"; 
+    cout<<")"; 
   return out;
 }
 
